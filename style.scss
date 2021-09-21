@@ -1,0 +1,232 @@
+@font-face { font-family: Gilroy; src: url('/Gilroy-FREE'); }
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.section-header{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  .header{
+    height: 115px;
+
+    .header-content{
+      width: 1450px;
+      height: 115px;
+      margin: 0 auto;
+      display: flex;
+      position: relative;
+
+      .header-content_box{
+        position: absolute;
+        top: 30%;
+        width: 1450px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .header-logo{
+        font-family: Homemade Apple, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: normal;
+        padding-left: 80px;
+      }
+
+      .header-links{
+        ul{
+          display: flex;
+        }
+
+        .link {
+          margin-left: 50px;
+          color: black;
+          font-size: 18px;
+          font-family: Gilroy, sans-serif;
+        }
+
+        .class{
+          margin-left: 25px ;
+        }
+      }
+      .gift-finder_btn{
+        width: 150px;
+        height: 35px;
+        margin-right: 35px;
+        color: #F7941E;
+        font-size: 18px;
+        border-radius: 5px;
+        background: white;
+        border: 1px solid #F7941E;
+      }
+      .gift-finder_btn:hover{
+        background: #ede9e4;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.section-body{
+  width: 100%;
+  margin: 0 auto;
+
+  .find-gift_container{
+    width: 1450px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .find-gift_block{
+    width: 725px;
+    background: #F1F1F2;
+
+    .find-gift{
+      width: 430px;
+      margin: 0 auto;
+
+      .find-gift_title{
+        font-size: 56px;
+        padding-top: 150px;
+        font-family: Gilroy, sans-serif;
+      }
+
+      .find-gift_text{
+        font-size: 20px;
+        padding-top: 35px;
+        font-family: Gilroy, sans-serif;
+        font-weight: normal;
+      }
+
+      .find-gift_btn{
+        width: 200px;
+        height: 60px;
+        background: #F7941E;
+        font-size: 18px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 55px;
+        color: white;
+        font-family: Gilroy, sans-serif;
+      }
+
+      .find-gift_btn:hover{
+        background: #d68006;
+        cursor: pointer;
+      }
+    }
+
+    .find-gift_photo{
+      width: 725px;
+      img{
+        width: 725px;
+      }
+    }
+  }
+
+  .learn-more-gift_container{
+    width: 1450px;
+    margin: 0 auto;
+    display: flex;
+
+    .learn-more_block{
+      width: 725px;
+      background: #F1F1F2;
+
+      .learn-more{
+        width: 440px;
+        margin: 0 auto;
+
+        .learn-more_title{
+          font-family: Gilroy, sans-serif;
+          font-size: 32px;
+          font-weight: normal;
+          padding-top: 160px;
+        }
+
+        .learn-more_text{
+          font-family: Gilroy, sans-serif;
+          font-weight: normal;
+          font-size: 20px;
+          padding-top: 30px;
+        }
+
+        .learn-more_btn{
+          margin-top: 40px;
+          width: 200px;
+          height: 60px;
+          font-size: 18px;
+          border: 1px solid #F7941E;
+          color: #F7941E;
+          border-radius: 5px;
+        }
+        .learn-more_btn:hover{
+          background: #ede9e4;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .all-gifts{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    .all-gifts_title{
+      font-family: Gilroy, sans-serif;
+      font-weight: normal;
+      font-size: 32px;
+    }
+  }
+
+  .advertisement{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    .advertisement_title{
+      font-family: Gilroy, sans-serif;
+      font-weight: normal;
+      font-size: 18px;
+    }
+  }
+
+  .pictures_container{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 70px;
+    .pictures{
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
