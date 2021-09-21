@@ -213,11 +213,86 @@ ul, li {
     width: 100%;
     margin: 0 auto;
     padding-top: 70px;
+    height: 535px;
+
     .pictures{
       width: 1200px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
+
+      .pictures-info{
+        background: #F1F1F2;
+        height: 165px;
+        position: relative;
+
+        .pictures-info_text{
+          font-family: Gilroy, sans-serif;
+          font-size: 20px;
+          font-weight: normal;
+          padding-top: 25px;
+          padding-left: 25px;
+        }
+
+        .see-more_link{
+          font-size: 14px;
+          font-family: Roboto, sans-serif;
+          position: absolute;
+          bottom: 25px;
+          left: 25px;
+        }
+      }
+      .picture-info_container:hover{
+        box-shadow: 0 0 10px black;
+        .pictures-info{
+          background: white;
+        }
+      }
+    }
+  }
+
+
+  .get-us_container{
+    width: 100%;
+    height: 240px;
+    margin: 0 auto;
+    background: #F7941E;
+
+    .get-us{
+      width: 1000px;
+      height: 240px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      .get-us_title{
+        font-family: Gilroy, sans-serif;
+        font-size: 32px;
+      }
+      .get-us_text{
+        font-family: Gilroy, sans-serif;
+        font-size: 32px;
+        font-weight: normal;
+      }
+
+      .get-us_btns{
+        display: flex;
+
+        .get-us-find-gift_btn{
+          width: 200px;
+          height: 50px;
+          background: #231F20;
+          border-radius: 5px;
+          font-family: Gilroy, sans-serif;
+          font-size: 18px;
+          color: white;
+          font-weight: lighter;
+        }
+        .get-us-how-works_btn{
+          width: 200px;
+          height: 50px;
+        }
+      }
     }
   }
 }
