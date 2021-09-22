@@ -20,70 +20,69 @@ ul, li {
   margin: 0;
 }
 
-.section-header{
+.header{
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  height: 115px;
 
-  .header{
+  .header-content{
+    width: 1450px;
     height: 115px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
 
-    .header-content{
+    .header-content_box{
+      position: absolute;
+      top: 30%;
       width: 1450px;
-      height: 115px;
-      margin: 0 auto;
       display: flex;
-      position: relative;
+      justify-content: space-between;
+    }
 
-      .header-content_box{
-        position: absolute;
-        top: 30%;
-        width: 1450px;
+    .header-logo{
+      font-family: Homemade Apple, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: normal;
+      padding-left: 80px;
+    }
+
+    .header-links{
+      ul{
         display: flex;
-        justify-content: space-between;
       }
 
-      .header-logo{
-        font-family: Homemade Apple, sans-serif;
+      .link {
+        margin-left: 50px;
+        color: black;
         font-size: 18px;
-        font-style: normal;
-        font-weight: normal;
-        padding-left: 80px;
+        font-family: Gilroy, sans-serif;
       }
 
-      .header-links{
-        ul{
-          display: flex;
-        }
+      .class{
+        margin-left: 25px ;
+      }
+    }
 
-        .link {
-          margin-left: 50px;
-          color: black;
-          font-size: 18px;
-          font-family: Gilroy, sans-serif;
-        }
-
-        .class{
-          margin-left: 25px ;
-        }
-      }
-      .gift-finder_btn{
-        width: 150px;
-        height: 35px;
-        margin-right: 35px;
-        color: #F7941E;
-        font-size: 18px;
-        border-radius: 5px;
-        background: white;
-        border: 1px solid #F7941E;
-      }
-      .gift-finder_btn:hover{
-        background: #ede9e4;
-        cursor: pointer;
-      }
+    .gift-finder_btn{
+      width: 150px;
+      height: 35px;
+      margin-right: 35px;
+      color: #F7941E;
+      font-size: 18px;
+      border-radius: 5px;
+      background: white;
+      border: 1px solid #F7941E;
+    }
+    .gift-finder_btn:hover{
+      background: #ede9e4;
+      cursor: pointer;
     }
   }
 }
+
 
 .section-body{
   width: 100%;
@@ -295,6 +294,11 @@ ul, li {
           margin-right: 15px;
           border: none;
         }
+        .get-us-find-gift_btn:hover{
+          background: black;
+          cursor: pointer;
+        }
+
         .get-us-how-works_btn{
           width: 200px;
           height: 50px;
@@ -302,6 +306,10 @@ ul, li {
           border: 1px solid #000000;
           border-radius: 5px;
           font-family: Gilroy, sans-serif;
+        }
+        .get-us-how-works_btn:hover{
+          background: #cf720e;
+          cursor: pointer;
         }
       }
     }
@@ -464,6 +472,113 @@ ul, li {
           }
         }
       }
+    }
+  }
+}
+
+.footer{
+  width: 100%;
+  margin: 0 auto;
+  height: 410px;
+  background: #FAFAFA;
+
+  .footer_container{
+    width: 1000px;
+    margin: 0 auto;
+
+    .footer_links{
+      width: 700px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 105px;
+
+      .footer-home_link{
+        font-size: 14px;
+        font-family: Gilroy, sans-serif;
+        color: black;
+        font-weight: bold;
+      }
+      .footer-home_link:hover{
+        text-decoration: underline;
+      }
+      .footer-about_link{
+        margin-left: 80px;
+        font-size: 14px;
+        font-family: Gilroy, sans-serif;
+        color: black;
+        font-weight: bold;
+      }
+      .footer-about_link:hover{
+        text-decoration: underline;
+      }
+      .footer_logo{
+        font-size: 18px;
+        color: #F7941E;
+        font-family: Homemade Apple, sans-serif;
+      }
+      .footer-service_link{
+        margin-right: 80px;
+        font-size: 14px;
+        font-family: Gilroy, sans-serif;
+        color: black;
+        font-weight: bold;
+      }
+      .footer-service_link:hover{
+        text-decoration: underline;
+      }
+      .footer-blog_link{
+        font-size: 14px;
+        font-family: Gilroy, sans-serif;
+        color: black;
+        font-weight: bold;
+      }
+      .footer-blog_link:hover{
+        text-decoration: underline;
+      }
+    }
+    hr{
+      margin-top: 40px;
+      border: 1px solid #000000;
+    }
+  }
+
+  .networks_block{
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+
+    .facebook_logo:hover{
+      cursor: pointer;
+    }
+
+    .twitter_logo:hover{
+      cursor: pointer;
+    }
+
+    .instagram_logo:hover{
+      cursor: pointer;
+    }
+
+    .youtube_logo:hover{
+      cursor: pointer;
+    }
+
+    .pinterest_logo:hover{
+      cursor: pointer;
+    }
+  }
+
+  .privacy_block{
+    margin: 0 auto;
+    padding-top: 70px;
+    text-align: center;
+    .privacy_title{
+      font-size: 14px;
+      font-family: Gilroy, sans-serif;
+      font-weight: normal;
     }
   }
 }

@@ -22,48 +22,46 @@ ul, li {
   margin: 0;
 }
 
-.section-header {
+.header {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-}
-.section-header .header {
   height: 115px;
 }
-.section-header .header .header-content {
+.header .header-content {
   width: 1450px;
   height: 115px;
   margin: 0 auto;
   display: flex;
   position: relative;
 }
-.section-header .header .header-content .header-content_box {
+.header .header-content .header-content_box {
   position: absolute;
   top: 30%;
   width: 1450px;
   display: flex;
   justify-content: space-between;
 }
-.section-header .header .header-content .header-logo {
+.header .header-content .header-logo {
   font-family: Homemade Apple, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: normal;
   padding-left: 80px;
 }
-.section-header .header .header-content .header-links ul {
+.header .header-content .header-links ul {
   display: flex;
 }
-.section-header .header .header-content .header-links .link {
+.header .header-content .header-links .link {
   margin-left: 50px;
   color: black;
   font-size: 18px;
   font-family: Gilroy, sans-serif;
 }
-.section-header .header .header-content .header-links .class {
+.header .header-content .header-links .class {
   margin-left: 25px;
 }
-.section-header .header .header-content .gift-finder_btn {
+.header .header-content .gift-finder_btn {
   width: 150px;
   height: 35px;
   margin-right: 35px;
@@ -73,7 +71,7 @@ ul, li {
   background: white;
   border: 1px solid #F7941E;
 }
-.section-header .header .header-content .gift-finder_btn:hover {
+.header .header-content .gift-finder_btn:hover {
   background: #ede9e4;
   cursor: pointer;
 }
@@ -266,6 +264,10 @@ ul, li {
   margin-right: 15px;
   border: none;
 }
+.section-body .get-us_container .get-us .get-us_btns .get-us-find-gift_btn:hover {
+  background: black;
+  cursor: pointer;
+}
 .section-body .get-us_container .get-us .get-us_btns .get-us-how-works_btn {
   width: 200px;
   height: 50px;
@@ -273,6 +275,10 @@ ul, li {
   border: 1px solid #000000;
   border-radius: 5px;
   font-family: Gilroy, sans-serif;
+}
+.section-body .get-us_container .get-us .get-us_btns .get-us-how-works_btn:hover {
+  background: #cf720e;
+  cursor: pointer;
 }
 .section-body .best-blogs_container {
   width: 1450px;
@@ -417,6 +423,103 @@ ul, li {
 }
 .section-body .best-blogs_container .wish-info_container .interesting-info-wishes_block .interesting-info-wishes_link .interesting-info-wishes_read-more:hover {
   text-decoration: underline;
+}
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  height: 410px;
+  background: #FAFAFA;
+}
+.footer .footer_container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.footer .footer_container .footer_links {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 105px;
+}
+.footer .footer_container .footer_links .footer-home_link {
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  color: black;
+  font-weight: bold;
+}
+.footer .footer_container .footer_links .footer-home_link:hover {
+  text-decoration: underline;
+}
+.footer .footer_container .footer_links .footer-about_link {
+  margin-left: 80px;
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  color: black;
+  font-weight: bold;
+}
+.footer .footer_container .footer_links .footer-about_link:hover {
+  text-decoration: underline;
+}
+.footer .footer_container .footer_links .footer_logo {
+  font-size: 18px;
+  color: #F7941E;
+  font-family: Homemade Apple, sans-serif;
+}
+.footer .footer_container .footer_links .footer-service_link {
+  margin-right: 80px;
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  color: black;
+  font-weight: bold;
+}
+.footer .footer_container .footer_links .footer-service_link:hover {
+  text-decoration: underline;
+}
+.footer .footer_container .footer_links .footer-blog_link {
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  color: black;
+  font-weight: bold;
+}
+.footer .footer_container .footer_links .footer-blog_link:hover {
+  text-decoration: underline;
+}
+.footer .footer_container hr {
+  margin-top: 40px;
+  border: 1px solid #000000;
+}
+.footer .networks_block {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 55px;
+}
+.footer .networks_block .facebook_logo:hover {
+  cursor: pointer;
+}
+.footer .networks_block .twitter_logo:hover {
+  cursor: pointer;
+}
+.footer .networks_block .instagram_logo:hover {
+  cursor: pointer;
+}
+.footer .networks_block .youtube_logo:hover {
+  cursor: pointer;
+}
+.footer .networks_block .pinterest_logo:hover {
+  cursor: pointer;
+}
+.footer .privacy_block {
+  margin: 0 auto;
+  padding-top: 70px;
+  text-align: center;
+}
+.footer .privacy_block .privacy_title {
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
