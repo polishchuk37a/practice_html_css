@@ -217,6 +217,10 @@ ul, li {
   position: absolute;
   bottom: 25px;
   left: 25px;
+  color: black;
+}
+.section-body .pictures_container .pictures .pictures-info .see-more_link:hover {
+  text-decoration: underline;
 }
 .section-body .pictures_container .pictures .picture-info_container:hover {
   box-shadow: 0 0 10px black;
@@ -236,6 +240,7 @@ ul, li {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .section-body .get-us_container .get-us .get-us_title {
   font-family: Gilroy, sans-serif;
@@ -258,10 +263,160 @@ ul, li {
   font-size: 18px;
   color: white;
   font-weight: lighter;
+  margin-right: 15px;
+  border: none;
 }
 .section-body .get-us_container .get-us .get-us_btns .get-us-how-works_btn {
   width: 200px;
   height: 50px;
+  background: #F7941E;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-family: Gilroy, sans-serif;
+}
+.section-body .best-blogs_container {
+  width: 1450px;
+  height: 1025px;
+  margin: 0 auto;
+}
+.section-body .best-blogs_container .best-blog_title {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-body .best-blogs_container .best-blog_title .best-blog-ever_title {
+  font-size: 32px;
+  font-family: Gilroy, sans-serif;
+  font-weight: normal;
+  padding-top: 90px;
+}
+.section-body .best-blogs_container .best-blog_title .try-our-blog_title {
+  font-size: 18px;
+  font-family: Gilroy, sans-serif;
+  padding-top: 25px;
+  font-weight: normal;
+}
+.section-body .best-blogs_container .wish_container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 75px;
+  display: flex;
+}
+.section-body .best-blogs_container .wish_container .wish_block {
+  background: #231F20;
+  width: 800px;
+  height: 370px;
+}
+.section-body .best-blogs_container .wish_container .wish_block .name {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-family: Gilroy, sans-serif;
+  font-weight: normal;
+  padding-top: 60px;
+  padding-left: 80px;
+}
+.section-body .best-blogs_container .wish_container .wish_block .wish-title_block {
+  width: 550px;
+}
+.section-body .best-blogs_container .wish_container .wish_block .wish-title_block .wish_title {
+  font-family: Gilroy, sans-serif;
+  font-weight: normal;
+  font-size: 48px;
+  color: #FFFFFF;
+  padding-top: 30px;
+  padding-left: 80px;
+}
+.section-body .best-blogs_container .wish_container .wish_block .wish-read-more {
+  padding-top: 70px;
+}
+.section-body .best-blogs_container .wish_container .wish_block .wish-read-more .read-more_link {
+  font-size: 18px;
+  font-family: Gilroy, sans-serif;
+  font-weight: normal;
+  color: #FFFFFF;
+  padding-left: 80px;
+}
+.section-body .best-blogs_container .wish_container .wish_block .wish-read-more .read-more_link:hover {
+  text-decoration: underline;
+}
+.section-body .best-blogs_container .wish-info_container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.section-body .best-blogs_container .wish-info_container .database-wishes {
+  width: 570px;
+  height: 270px;
+}
+.section-body .best-blogs_container .wish-info_container .database-wishes .database-wishes_block {
+  width: 500px;
+}
+.section-body .best-blogs_container .wish-info_container .database-wishes .database-wishes_block .database-wishes_title {
+  padding-top: 50px;
+  padding-left: 50px;
+  font-family: Gilroy, sans-serif;
+  font-size: 24px;
+}
+.section-body .best-blogs_container .wish-info_container .database-wishes .database-wishes_block .database-wishes_text {
+  font-family: Gilroy, sans-serif;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left: 50px;
+  font-weight: normal;
+}
+.section-body .best-blogs_container .wish-info_container .database-wishes .database-wishes_block .database-wishes_link {
+  padding-top: 30px;
+}
+.section-body .best-blogs_container .wish-info_container .database-wishes .database-wishes_block .database-wishes_link .database-wishes_read-more {
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  font-weight: normal;
+  color: black;
+  padding-left: 50px;
+}
+.section-body .best-blogs_container .wish-info_container .database-wishes .database-wishes_block .database-wishes_link .database-wishes_read-more:hover {
+  text-decoration: underline;
+}
+.section-body .best-blogs_container .wish-info_container .database-wishes:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.section-body .best-blogs_container .wish-info_container .interesting-info-wishes {
+  width: 570px;
+  height: 270px;
+}
+.section-body .best-blogs_container .wish-info_container .interesting-info-wishes:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.section-body .best-blogs_container .wish-info_container .interesting-info-wishes_block {
+  width: 530px;
+}
+.section-body .best-blogs_container .wish-info_container .interesting-info-wishes_block .interesting-info-wishes_title {
+  padding-top: 50px;
+  padding-left: 50px;
+  font-family: Gilroy, sans-serif;
+  font-size: 24px;
+}
+.section-body .best-blogs_container .wish-info_container .interesting-info-wishes_block .interesting-info-wishes_text {
+  font-family: Gilroy, sans-serif;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left: 50px;
+  font-weight: normal;
+}
+.section-body .best-blogs_container .wish-info_container .interesting-info-wishes_block .interesting-info-wishes_link {
+  padding-top: 30px;
+}
+.section-body .best-blogs_container .wish-info_container .interesting-info-wishes_block .interesting-info-wishes_link .interesting-info-wishes_read-more {
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  font-weight: normal;
+  color: black;
+  padding-left: 50px;
+}
+.section-body .best-blogs_container .wish-info_container .interesting-info-wishes_block .interesting-info-wishes_link .interesting-info-wishes_read-more:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
