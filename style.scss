@@ -26,16 +26,17 @@ ul, li {
   padding: 0;
   height: 115px;
 
+
   .header-content{
-    width: 1450px;
+    max-width: 1450px;
     height: 115px;
     margin: 0 auto;
     display: flex;
-    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+
 
     .header-content_box{
-      position: absolute;
-      top: 30%;
       width: 1450px;
       display: flex;
       justify-content: space-between;
@@ -50,6 +51,8 @@ ul, li {
     }
 
     .header-links{
+      display: flex;
+      align-items: center;
       ul{
         display: flex;
       }
@@ -67,8 +70,7 @@ ul, li {
     }
 
     .gift-finder_btn{
-      width: 150px;
-      height: 35px;
+      padding: 5px 24px;
       margin-right: 35px;
       color: #F7941E;
       font-size: 18px;
@@ -94,7 +96,7 @@ ul, li {
     display: flex;
   }
   .find-gift_block{
-    width: 725px;
+    width: 50%;
     background: #F1F1F2;
 
     .find-gift{
@@ -115,8 +117,7 @@ ul, li {
       }
 
       .find-gift_btn{
-        width: 200px;
-        height: 60px;
+        padding: 20px 25px;
         background: #F7941E;
         font-size: 18px;
         border-radius: 5px;
@@ -131,12 +132,13 @@ ul, li {
         cursor: pointer;
       }
     }
+  }
 
-    .find-gift_photo{
-      width: 725px;
-      img{
-        width: 725px;
-      }
+  .find-gift_photo{
+    width: 50%;
+    .find-gift-photo_img{
+      height: 100%;
+      width: 100%;
     }
   }
 
@@ -145,8 +147,16 @@ ul, li {
     margin: 0 auto;
     display: flex;
 
+    .learn-more_photo{
+      width: 50%;
+      .learn-more-photo_img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+
     .learn-more_block{
-      width: 725px;
+      width: 50%;
       background: #F1F1F2;
 
       .learn-more{
@@ -169,8 +179,7 @@ ul, li {
 
         .learn-more_btn{
           margin-top: 40px;
-          width: 200px;
-          height: 60px;
+          padding: 19px 45px;
           font-size: 18px;
           border: 1px solid #F7941E;
           color: #F7941E;
@@ -185,8 +194,6 @@ ul, li {
   }
 
   .all-gifts{
-    width: 100%;
-    margin: 0 auto;
     text-align: center;
     padding-top: 100px;
     .all-gifts_title{
@@ -212,16 +219,30 @@ ul, li {
     width: 100%;
     margin: 0 auto;
     padding-top: 70px;
-    height: 535px;
 
     .pictures{
-      width: 1200px;
+      max-width: 1200px;
       margin: 0 auto;
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 135px;
+
+      .picture-info_container:not(:first-child){
+        margin-left: 30px;
+      }
+
+      .picture-info_container{
+        @media (max-width: 1170px){
+          margin-left: 30px;
+        }
+      }
+
+      .picture-container{
+        height: 270px;
+      }
 
       .pictures-info{
-        background: #F1F1F2;
+        background: #FAFAFA;
         height: 165px;
         position: relative;
 
@@ -246,7 +267,7 @@ ul, li {
         }
       }
       .picture-info_container:hover{
-        box-shadow: 0 0 10px black;
+        filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
         .pictures-info{
           background: white;
         }
@@ -283,8 +304,7 @@ ul, li {
         display: flex;
 
         .get-us-find-gift_btn{
-          width: 200px;
-          height: 50px;
+          padding: 13px 25px;
           background: #231F20;
           border-radius: 5px;
           font-family: Gilroy, sans-serif;
@@ -300,8 +320,7 @@ ul, li {
         }
 
         .get-us-how-works_btn{
-          width: 200px;
-          height: 50px;
+          padding: 12.5px 30px;
           background: #F7941E;
           border: 1px solid #000000;
           border-radius: 5px;

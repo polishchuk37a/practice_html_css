@@ -29,15 +29,14 @@ ul, li {
   height: 115px;
 }
 .header .header-content {
-  width: 1450px;
+  max-width: 1450px;
   height: 115px;
   margin: 0 auto;
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .header .header-content .header-content_box {
-  position: absolute;
-  top: 30%;
   width: 1450px;
   display: flex;
   justify-content: space-between;
@@ -48,6 +47,10 @@ ul, li {
   font-style: normal;
   font-weight: normal;
   padding-left: 80px;
+}
+.header .header-content .header-links {
+  display: flex;
+  align-items: center;
 }
 .header .header-content .header-links ul {
   display: flex;
@@ -62,8 +65,7 @@ ul, li {
   margin-left: 25px;
 }
 .header .header-content .gift-finder_btn {
-  width: 150px;
-  height: 35px;
+  padding: 5px 24px;
   margin-right: 35px;
   color: #F7941E;
   font-size: 18px;
@@ -86,7 +88,7 @@ ul, li {
   display: flex;
 }
 .section-body .find-gift_block {
-  width: 725px;
+  width: 50%;
   background: #F1F1F2;
 }
 .section-body .find-gift_block .find-gift {
@@ -105,8 +107,7 @@ ul, li {
   font-weight: normal;
 }
 .section-body .find-gift_block .find-gift .find-gift_btn {
-  width: 200px;
-  height: 60px;
+  padding: 20px 25px;
   background: #F7941E;
   font-size: 18px;
   border-radius: 5px;
@@ -119,19 +120,27 @@ ul, li {
   background: #d68006;
   cursor: pointer;
 }
-.section-body .find-gift_block .find-gift_photo {
-  width: 725px;
+.section-body .find-gift_photo {
+  width: 50%;
 }
-.section-body .find-gift_block .find-gift_photo img {
-  width: 725px;
+.section-body .find-gift_photo .find-gift-photo_img {
+  height: 100%;
+  width: 100%;
 }
 .section-body .learn-more-gift_container {
   width: 1450px;
   margin: 0 auto;
   display: flex;
 }
+.section-body .learn-more-gift_container .learn-more_photo {
+  width: 50%;
+}
+.section-body .learn-more-gift_container .learn-more_photo .learn-more-photo_img {
+  height: 100%;
+  width: 100%;
+}
 .section-body .learn-more-gift_container .learn-more_block {
-  width: 725px;
+  width: 50%;
   background: #F1F1F2;
 }
 .section-body .learn-more-gift_container .learn-more_block .learn-more {
@@ -152,8 +161,7 @@ ul, li {
 }
 .section-body .learn-more-gift_container .learn-more_block .learn-more .learn-more_btn {
   margin-top: 40px;
-  width: 200px;
-  height: 60px;
+  padding: 19px 45px;
   font-size: 18px;
   border: 1px solid #F7941E;
   color: #F7941E;
@@ -164,8 +172,6 @@ ul, li {
   cursor: pointer;
 }
 .section-body .all-gifts {
-  width: 100%;
-  margin: 0 auto;
   text-align: center;
   padding-top: 100px;
 }
@@ -189,16 +195,27 @@ ul, li {
   width: 100%;
   margin: 0 auto;
   padding-top: 70px;
-  height: 535px;
 }
 .section-body .pictures_container .pictures {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 135px;
+}
+.section-body .pictures_container .pictures .picture-info_container:not(:first-child) {
+  margin-left: 30px;
+}
+@media (max-width: 1170px) {
+  .section-body .pictures_container .pictures .picture-info_container {
+    margin-left: 30px;
+  }
+}
+.section-body .pictures_container .pictures .picture-container {
+  height: 270px;
 }
 .section-body .pictures_container .pictures .pictures-info {
-  background: #F1F1F2;
+  background: #FAFAFA;
   height: 165px;
   position: relative;
 }
@@ -221,7 +238,7 @@ ul, li {
   text-decoration: underline;
 }
 .section-body .pictures_container .pictures .picture-info_container:hover {
-  box-shadow: 0 0 10px black;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
 }
 .section-body .pictures_container .pictures .picture-info_container:hover .pictures-info {
   background: white;
@@ -253,8 +270,7 @@ ul, li {
   display: flex;
 }
 .section-body .get-us_container .get-us .get-us_btns .get-us-find-gift_btn {
-  width: 200px;
-  height: 50px;
+  padding: 13px 25px;
   background: #231F20;
   border-radius: 5px;
   font-family: Gilroy, sans-serif;
@@ -269,8 +285,7 @@ ul, li {
   cursor: pointer;
 }
 .section-body .get-us_container .get-us .get-us_btns .get-us-how-works_btn {
-  width: 200px;
-  height: 50px;
+  padding: 12.5px 30px;
   background: #F7941E;
   border: 1px solid #000000;
   border-radius: 5px;
