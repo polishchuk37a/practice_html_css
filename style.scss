@@ -1,5 +1,3 @@
-@font-face { font-family: Gilroy; src: url('/Gilroy-FREE'); }
-
 body {
   padding: 0;
   margin: 0;
@@ -20,12 +18,74 @@ ul, li {
   margin: 0;
 }
 
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: #616161;
+  margin: 6px 15px;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-7px, -5px);
+}
+.burger-menu-list{
+  background: linear-gradient(45deg, #f0ece6, #F1F1F2);
+  box-shadow: 0 0 15px 0;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+
+  .burger-container{
+    margin: 0 auto;
+    max-width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .burger-list{
+      list-style-type: none;
+      li{
+        padding-top: 20px;
+        font-size: 18px;
+        text-align: center;
+        :hover{
+          text-decoration: underline;
+        }
+        a{
+          color: #333;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.show{
+  display: block;
+}
+
 .header{
   width: 100%;
   margin: 0 auto;
   padding: 0;
   height: 115px;
-
 
   .header-content{
     max-width: 1450px;
@@ -35,11 +95,21 @@ ul, li {
     flex-wrap: wrap;
     align-items: center;
 
+    .burger-menu {
+      @media (max-width: 700px) {
+        display: block;
+        cursor: pointer;
+      }
+    }
 
     .header-content_box{
       width: 1450px;
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: 700px) {
+        display: none;
+      }
     }
 
     .header-logo{
@@ -85,7 +155,6 @@ ul, li {
   }
 }
 
-
 .section-body{
   width: 100%;
   margin: 0 auto;
@@ -94,20 +163,43 @@ ul, li {
     max-width: 1450px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+
+    @media (max-width: 1490px){
+      padding: 0 15px 0 15px;
+    }
   }
+
   .find-gift_block{
     width: 50%;
     background: #F1F1F2;
 
     .find-gift{
-      width: 430px;
+      padding: 156px 126px 135px 162px;
       margin: 0 auto;
+
+      @media (max-width: 1250px){
+        padding: 70px 80px 70px 100px;
+      }
+
+      @media (max-width: 1063px){
+        padding: 40px 50px 40px 70px;
+      }
 
       .find-gift_title{
         font-size: 56px;
-        padding-top: 150px;
         font-family: Gilroy, sans-serif;
+
+        @media (max-width: 945px) {
+          font-size: 40px;
+        }
+
+        @media (max-width: 845px) {
+          font-size: 30px;
+        }
+
+        @media (max-width: 800px) {
+          font-size: 25px;
+        }
       }
 
       .find-gift_text{
@@ -115,6 +207,10 @@ ul, li {
         padding-top: 35px;
         font-family: Gilroy, sans-serif;
         font-weight: normal;
+
+        @media (max-width: 800px) {
+          font-size: 15px;
+        }
       }
 
       .find-gift_btn{
@@ -126,6 +222,10 @@ ul, li {
         margin-top: 55px;
         color: white;
         font-family: Gilroy, sans-serif;
+
+        @media (max-width: 845px) {
+          font-size: 13px;
+        }
       }
 
       .find-gift_btn:hover{
@@ -149,6 +249,10 @@ ul, li {
     display: flex;
     flex-wrap: wrap;
 
+    @media (max-width: 1490px){
+      padding: 0 15px 0 15px;
+    }
+
     .learn-more_photo{
       width: 50%;
       .learn-more-photo_img{
@@ -162,14 +266,25 @@ ul, li {
       background: #F1F1F2;
 
       .learn-more{
-        width: 440px;
-        margin: 0 auto;
+        padding: 164px 166px 104px 102px;
+
+        @media (max-width: 1250px){
+          padding: 120px 130px 80px 70px;
+        }
+
+        @media (max-width: 1063px){
+          padding: 90px 100px 50px 50px;
+        }
+        
+        @media (max-width: 878px) {
+          padding: 40px 60px 40px 50px;
+        }
+
 
         .learn-more_title{
           font-family: Gilroy, sans-serif;
           font-size: 32px;
           font-weight: normal;
-          padding-top: 160px;
         }
 
         .learn-more_text{
@@ -177,6 +292,15 @@ ul, li {
           font-weight: normal;
           font-size: 20px;
           padding-top: 30px;
+          text-align: justify;
+
+          @media (max-width: 945px) {
+            font-size: 15px;
+          }
+
+          @media (max-width: 743px) {
+            padding-top: 15px;
+          }
         }
 
         .learn-more_btn{
@@ -186,6 +310,14 @@ ul, li {
           border: 1px solid #F7941E;
           color: #F7941E;
           border-radius: 5px;
+
+          @media (max-width: 845px) {
+            font-size: 13px;
+          }
+
+          @media (max-width: 743px) {
+            margin-top: 15px;
+          }
         }
         .learn-more_btn:hover{
           background: #ede9e4;
@@ -198,6 +330,11 @@ ul, li {
   .all-gifts{
     text-align: center;
     padding-top: 100px;
+
+    @media (max-width: 899px) {
+      padding-top: 50px;
+    }
+
     .all-gifts_title{
       font-family: Gilroy, sans-serif;
       font-weight: normal;
@@ -222,6 +359,14 @@ ul, li {
     margin: 0 auto;
     padding-top: 70px;
 
+    @media (max-width: 1170px){
+      padding-top: 40px;
+    }
+
+    @media (max-width: 899px) {
+      padding-top: 0;
+    }
+
     .pictures{
       max-width: 1200px;
       margin: 0 auto;
@@ -229,6 +374,10 @@ ul, li {
       flex-wrap: wrap;
       padding-bottom: 135px;
       justify-content: center;
+
+      @media (max-width: 899px) {
+        padding-bottom: 50px;
+      }
 
       .picture-info_container:not(:first-child){
         margin-left: 30px;
@@ -242,6 +391,10 @@ ul, li {
 
       .picture-container{
         height: 270px;
+
+        @media (max-width: 1170px){
+          margin-top: 30px;
+        }
       }
 
       .pictures-info{
@@ -278,7 +431,6 @@ ul, li {
     }
   }
 
-
   .get-us_container{
     width: 100%;
     height: 240px;
@@ -286,12 +438,21 @@ ul, li {
     background: #F7941E;
 
     .get-us{
-      width: 1000px;
+      max-width: 1000px;
       height: 240px;
       margin: 0 auto;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
+
+      @media (max-width: 1040px) {
+        padding: 0 15px 0 15px;
+      }
+
+      @media (max-width: 721px) {
+        justify-content: center;
+      }
 
       .get-us_title{
         font-family: Gilroy, sans-serif;
@@ -338,9 +499,9 @@ ul, li {
   }
 
   .best-blogs_container{
-    width: 1450px;
-    height: 1025px;
+    max-width: 1450px;
     margin: 0 auto;
+    padding-bottom: 80px;
 
     .best-blog_title{
       width: 700px;
@@ -360,28 +521,32 @@ ul, li {
         font-weight: normal;
       }
     }
+
     .wish_container{
       width: 1200px;
       margin: 0 auto;
       padding-top: 75px;
       display: flex;
 
+      .wish_photo{
+        img{
+          height: 100%;
+        }
+      }
+
+
       .wish_block{
         background: #231F20;
-        width: 800px;
-        height: 370px;
+        padding: 63px 200px 49px 78px;
 
         .name{
           font-size: 14px;
           color: #FFFFFF;
           font-family: Gilroy, sans-serif;
           font-weight: normal;
-          padding-top: 60px;
-          padding-left: 80px;
         }
 
         .wish-title_block{
-          width: 550px;
 
           .wish_title{
             font-family: Gilroy, sans-serif;
@@ -389,7 +554,6 @@ ul, li {
             font-size: 48px;
             color: #FFFFFF;
             padding-top: 30px;
-            padding-left: 80px;
           }
         }
         .wish-read-more{
@@ -400,7 +564,6 @@ ul, li {
             font-family: Gilroy, sans-serif;
             font-weight: normal;
             color: #FFFFFF;
-            padding-left: 80px;
           }
           .read-more_link:hover{
             text-decoration: underline;
@@ -409,11 +572,16 @@ ul, li {
       }
     }
     .wish-info_container{
-      width: 1200px;
+      max-width: 1200px;
       margin: 0 auto;
       padding-top: 40px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
+
+      @media (max-width: 1139px) {
+        justify-content: center;
+      }
 
       .database-wishes{
         width: 570px;
@@ -458,6 +626,10 @@ ul, li {
       .interesting-info-wishes{
         width: 570px;
         height: 270px;
+        @media (max-width: 1139px) {
+          margin-top: 30px;
+        }
+
       }
       .interesting-info-wishes:hover{
         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
